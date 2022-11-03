@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>학생 정보 입력</legend>
+    <form action="form_ok.jsp" method="post">
+        이름 : <input type="text" id="name" name="name"><br>
+        성별 : <input type="radio" id="gender" name="gender" value="남자">남
+        <input type="radio" id="radio" name="gender" value="여자">여<br>
+        학번 : <input type="text" name="studentId"><br>
+        학부 : <input type="text" id="major" name="major"><br>
+        RC : <input type="text" name="rc" list="rclist">
+        <datalist id="rclist">
+            <option value="장기려"></option>
+            <option value="토레이"></option>
+            <option value="카이퍼"></option>
+            <option value="손양원"></option>
+            <option value="열송학사"></option>
+            <option value="카마이클"></option>
+        </datalist>
+        <br>
+        이메일 : <input type="email" id="email" name="email"><br>
+        취미: <input type="checkbox" id="hobby1" name="hobby1" value="영화감상">영화감상
+        <input type="checkbox" id="hobby2" name="hobby2" value="축구">축구
+        <input type="checkbox" id="hobby3" name="hobby3" value="독서">독서<br>
+        지역 : <select name="city">
+        <optgroup label="수도권">
+            <option value="서울">서울</option>
+            <option value="경기도">경기도</option>
+            <option value="인천">인천</option>
+        </optgroup>
+        <optgroup label="그 외 도시">
+            <option value="부산" selected>부산</option>
+            <option value="대구">대구</option>
+            <option value="광주">광주</option>
+        </optgroup>
+    </select><br>
+        생년월일 : <input type="date" min="1990-01-01" max="2022-10-14" name="calander"><br>
+        좋아하는 색 : <input type="color" name="color" value="">
+        <br>
+        기타사항 : <br>
+        <textarea name="content" cols=40 rows=5></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+</body>
+</html>
